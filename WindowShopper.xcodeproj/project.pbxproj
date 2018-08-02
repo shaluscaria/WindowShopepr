@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		566670A621128728008C4207 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566670A521128728008C4207 /* AppDelegate.swift */; };
-		566670A821128728008C4207 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566670A721128728008C4207 /* ViewController.swift */; };
+		566670A821128728008C4207 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566670A721128728008C4207 /* MainVC.swift */; };
 		566670AB21128728008C4207 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566670A921128728008C4207 /* Main.storyboard */; };
 		566670AD21128728008C4207 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 566670AC21128728008C4207 /* Assets.xcassets */; };
 		566670B021128728008C4207 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566670AE21128728008C4207 /* LaunchScreen.storyboard */; };
+		566670BA21128E08008C4207 /* CustomPriceCheckerTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566670B921128E08008C4207 /* CustomPriceCheckerTF.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		566670A221128728008C4207 /* WindowShopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WindowShopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		566670A521128728008C4207 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		566670A721128728008C4207 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		566670A721128728008C4207 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		566670AA21128728008C4207 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		566670AC21128728008C4207 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		566670AF21128728008C4207 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		566670B121128728008C4207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		566670B921128E08008C4207 /* CustomPriceCheckerTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPriceCheckerTF.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		566670A421128728008C4207 /* WindowShopper */ = {
 			isa = PBXGroup;
 			children = (
+				566670B821128DCA008C4207 /* View */,
+				566670B721128D1D008C4207 /* Controller */,
 				566670A521128728008C4207 /* AppDelegate.swift */,
-				566670A721128728008C4207 /* ViewController.swift */,
 				566670A921128728008C4207 /* Main.storyboard */,
 				566670AC21128728008C4207 /* Assets.xcassets */,
 				566670AE21128728008C4207 /* LaunchScreen.storyboard */,
 				566670B121128728008C4207 /* Info.plist */,
 			);
 			path = WindowShopper;
+			sourceTree = "<group>";
+		};
+		566670B721128D1D008C4207 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				566670A721128728008C4207 /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		566670B821128DCA008C4207 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				566670B921128E08008C4207 /* CustomPriceCheckerTF.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +155,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				566670A821128728008C4207 /* ViewController.swift in Sources */,
+				566670A821128728008C4207 /* MainVC.swift in Sources */,
+				566670BA21128E08008C4207 /* CustomPriceCheckerTF.swift in Sources */,
 				566670A621128728008C4207 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
