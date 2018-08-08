@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class MainVC: UIViewController {
 
     @IBOutlet var wageText: CustomPriceCheckerTF!
