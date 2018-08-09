@@ -13,6 +13,8 @@ class MainVC: UIViewController {
 
     @IBOutlet var wageText: CustomPriceCheckerTF!
     @IBOutlet var priceText: CustomPriceCheckerTF!
+    @IBOutlet var hourLbl: UILabel!
+    @IBOutlet var resultLbl: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,12 +27,29 @@ class MainVC: UIViewController {
         
         wageText.inputAccessoryView = calcBtn
         priceText.inputAccessoryView = calcBtn
+        
+        resultLbl.isHidden = true
+        hourLbl.isHidden = true
     }
 
     @objc func calculate(){
+        if let wageTxt = wageText.text, let priceTxt = priceText.text {
+            if let wage = Double(wageTxt), let price = Double(priceTxt){
+                view.endEditing(true)
+                resultLbl.isHidden = false
+                hourLbl.isHidden = false
+                resultLbl.text = "\(Wage.getHours(forWage: wage, forPrice: price))"
+            }
+        }
         
     }
 
 
+    @IBAction func clearBtnPressed(_ sender: Any) {
+        resultLbl.isHidden = true
+        hourLbl.isHidden = true
+        wageText.text = ""
+        priceText.text = ""
+    }
 }
 
