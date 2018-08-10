@@ -1,7 +1,7 @@
 # WindowShopepr
 App calculates how much hour you need to work to buy and item
 
-WindowShopper
+Implemented
 -----------------
 1. Unit Testing done for core functionality.
 2. AutoLayout done for iphoine and ipad.
